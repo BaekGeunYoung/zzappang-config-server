@@ -1,0 +1,7 @@
+zuul:
+  ignoredServices: '*'
+  routes:
+    user:
+      path: /user/**
+      serviceId: auth
+      sensitiveHeaders: Cookie, Set-Cookie
